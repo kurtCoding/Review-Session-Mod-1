@@ -26,8 +26,19 @@ console.log(findTarget(arr2, "Chris"));
 
 // Given an array of numbers, return the first number that's bigger than 14 or undefined if no number is bigger than 14
 
+const arr3 = [11, 13, 14, 9, 22, 33, 7];
 
+function isNumBiggerThanFourteen(arr) {
+    for (let num of arr) {
+        if (num > 14) {
+            return num;
+        }
+    }
+    return undefined;
+} 
 
+console.log(isNumBiggerThanFourteen(arr1));
+console.log(isNumBiggerThanFourteen(arr3));
 // Given an array of strings, return the first string with length greater than 4 or undefined if no such string is found
 
 
