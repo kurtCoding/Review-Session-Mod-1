@@ -41,7 +41,18 @@ console.log(isNumBiggerThanFourteen(arr1));
 console.log(isNumBiggerThanFourteen(arr3));
 // Given an array of strings, return the first string with length greater than 4 or undefined if no such string is found
 
+const strArr = ["Bob", "Bill", "Kurt", "Darryl", "Samantha"];
+function longerWord(arr) {
+    for (str of arr) {
+        if (str.length > 4) {
+            return str;
+        }
+    }
+    return undefined;
+}
 
+console.log(longerWord(arr2));
+console.log(longerWord(strArr));
 
 // Given an array of Objects and a target id return the first object that matches the id or undefined if no such object is found
 // Expected Structure of a SINGLE object - 
