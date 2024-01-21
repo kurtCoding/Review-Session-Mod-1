@@ -22,20 +22,22 @@ function findTarget(arr, target) {
 console.log(findTarget(arr1, 7));
 console.log(findTarget(arr2, "Chris"));
 
-
-
 // Given an array of numbers, return the first number that's bigger than 14 or undefined if no number is bigger than 14
 
 const arr3 = [11, 13, 14, 9, 22, 33, 7];
 
+// function isNumBiggerThanFourteen(arr) {
+//     for (let num of arr) {
+//         if (num > 14) {
+//             return num;
+//         }
+//     }
+//     return undefined;
+// } 
+
 function isNumBiggerThanFourteen(arr) {
-    for (let num of arr) {
-        if (num > 14) {
-            return num;
-        }
-    }
-    return undefined;
-} 
+    return arr.find((num) => num > 14);
+}
 
 console.log(isNumBiggerThanFourteen(arr1));
 console.log(isNumBiggerThanFourteen(arr3));
@@ -50,6 +52,7 @@ function longerWord(arr) {
     }
     return undefined;
 }
+
 
 console.log(longerWord(arr2));
 console.log(longerWord(strArr));
