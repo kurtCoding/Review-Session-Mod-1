@@ -12,12 +12,15 @@ const arr2 = ["Tammy", "Chris", "Darryl"];
 
 function findTarget(arr, target) {
     for (let i = 0; i < arr.length; i++) {
-       return arr[i] === target ? target : undefined;
+      if (arr[i] === target) {
+        return target;
+      }
     }
+    return undefined;
 }
 
 console.log(findTarget(arr1, 7));
-console.log(findTarget(arr2, "Tammy"));
+console.log(findTarget(arr2, "Chris"));
 
 
 
