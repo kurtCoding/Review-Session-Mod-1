@@ -6,7 +6,18 @@
 
 
 
-// Given ab array of numbers and a given target. return the target if it's in the array or undefined if it's not
+// Given an array of numbers and a given target. return the target if it's in the array or undefined if it's not
+const arr1 = [1, 3, 6, 7, 2, 55, 6];
+const arr2 = ["Tammy", "Chris", "Darryl"];
+
+function findTarget(arr, target) {
+    for (let i = 0; i < arr.length; i++) {
+       return arr[i] === target ? target : undefined;
+    }
+}
+
+console.log(findTarget(arr1, 7));
+console.log(findTarget(arr2, "Tammy"));
 
 
 
@@ -35,3 +46,4 @@
 {
  name: "Robert"
 }
+*/
