@@ -116,3 +116,16 @@ console.log(findMatchingObj(arrOfObj2, "XK_a"));
  name: "Robert"
 }
 */
+
+function findName(arr, target) {
+    const objName = {};
+    for (let obj of arr) {
+        if (obj.name === target) {
+         objName.name = target;
+        }
+    }
+    return objName;
+}
+
+console.log(findName(arrOfObj, "Robert"));
+console.log(findName(arrOfObj2, "Bet"));
