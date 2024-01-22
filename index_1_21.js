@@ -10,13 +10,17 @@
 const arr1 = [1, 3, 6, 7, 2, 55, 6];
 const arr2 = ["Tammy", "Chris", "Darryl"];
 
+// function findTarget(arr, target) {
+//     for (let i = 0; i < arr.length; i++) {
+//       if (arr[i] === target) {
+//         return target;
+//       }
+//     }
+//     return undefined;
+// }
+
 function findTarget(arr, target) {
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i] === target) {
-        return target;
-      }
-    }
-    return undefined;
+    return arr.find((tar) => tar === target);
 }
 
 console.log(findTarget(arr1, 7));
