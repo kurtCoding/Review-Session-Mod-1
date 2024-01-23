@@ -49,12 +49,15 @@ console.log(isNumBiggerThanFourteen(arr3));
 
 const strArr = ["Bob", "Bill", "Kurt", "Darryl", "Samantha"];
 function longerWord(arr) {
-    for (str of arr) {
-        if (str.length > 4) {
-            return str;
-        }
-    }
-    return undefined;
+    arr.find((str) => str.length < 4);
+
+
+    // for (str of arr) {
+    //     if (str.length > 4) {
+    //         return str;
+    //     }
+    // }
+    // return undefined;
 }
 
 
