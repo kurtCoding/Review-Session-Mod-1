@@ -13,34 +13,34 @@
 // Write a function that takes in an object and returns a formatted greeting.
 // This is the format of the object - 
 
-function formatGreeting(obj) {     
-       return `Hello ${obj.firstName} ${obj.lastName}, have a great day at your job as a ${obj.occupation}`; 
-}
+// function formatGreeting(obj) {     
+//        return `Hello ${obj.firstName} ${obj.lastName}, have a great day at your job as a ${obj.occupation}`; 
+// }
 
 
-const john = {
-    firstName: "John",
-    lastName: "Klaus",
-    occupation: "Carpenter"
-  }
+// const john = {
+//     firstName: "John",
+//     lastName: "Klaus",
+//     occupation: "Carpenter"
+//   }
   
-  const rebecca = {
-    firstName: "Rebecca",
-    lastName: "Cohen",
-    occupation: "Teacher"
-  }
+//   const rebecca = {
+//     firstName: "Rebecca",
+//     lastName: "Cohen",
+//     occupation: "Teacher"
+//   }
   
-  console.log(formatGreeting(john) === "Hello John Klaus, have a great day at your job as a Carpenter")
+//   console.log(formatGreeting(john) === "Hello John Klaus, have a great day at your job as a Carpenter")
   
-  console.log(formatGreeting(rebecca) === "Hello Rebecca Cohen, have a great day at your job as a Teacher")
+//   console.log(formatGreeting(rebecca) === "Hello Rebecca Cohen, have a great day at your job as a Teacher")
   
   // 3.----------------------------------
   // Write a function that takes an array of objects and a targetId and returns a formatted string. Each object in the array will have the same structure as the objects from the previous question plus an id. Use chatGPT to create an array of 10 such objects.
   
 function formattedString(arr, targetId) {
-    for (let obj of arr) {
+    for (let i = 0; i < arr.length; i++) {
     if (targetId) {
-        return `Hello ${obj.firstName} ${obj.lastName}, id '${targetId}', have a great day at your job as a ${obj.occupation}`
+        return `Hello ${arr[i].firstName} ${arr[i].lastName}, id '${targetId}', have a great day at your job as a ${arr[i].occupation}`
     }
   }
 }
