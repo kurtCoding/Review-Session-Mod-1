@@ -215,6 +215,7 @@ const dinos = [
     return (key) ? obj[key] : obj.dinosaurId;
   }
     console.log(dinosaurInfo(dinos[2], "diet"));
+    console.log(dinosaurInfo(dinos[3]));
   
   // ------------------------------------------------------
   // 2. Given a dinosaur object and an mya (Millions of years ago) value, return a boolean indicating whether it was alive during that time or not
