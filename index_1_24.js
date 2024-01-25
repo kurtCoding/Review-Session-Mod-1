@@ -211,6 +211,10 @@ const dinos = [
   ];
   
   // 1. Given a dinosaur object and a key return the value of the corresponding key in the object. If no key is provided return the dinosaurId
+  function dinosaurInfo(obj, key) {
+    return (key) ? obj[key] : obj.dinosaurId;
+  }
+    console.log(dinosaurInfo(dinos[2], "diet"));
   
   // ------------------------------------------------------
   // 2. Given a dinosaur object and an mya (Millions of years ago) value, return a boolean indicating whether it was alive during that time or not
