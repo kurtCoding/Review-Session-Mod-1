@@ -218,9 +218,41 @@ const dinos = [
     console.log(dinosaurInfo(dinos[3]));
   
   // ------------------------------------------------------
-  // 2. Given a dinosaur object and an mya (Millions of years ago) value, return a boolean indicating whether it was alive during that time or not
-  
-  // If the dinosaur only has a single value for `mya`, they're considered alive if the `mya` value is equal to the given value or one less. For example, if a dinosaur has a `mya` value of `[29]`, the dinosaur's information will be returned if `29` is entered or `28` is entered.
-  
+//   // 2. Given a dinosaur object and an mya (Millions of years ago) value, return a boolean indicating whether it was alive during that time or not
+//   function isAlive(obj, mya) {
+//     if (mya === obj.mya[1] || mya === obj.mya[0]) {
+//         return true;
+//     } else 
+//     return false;
+//   }
+
+
+// If the dinosaur only has a single value for `mya`, they're considered alive if the `mya` value is equal to the given value or one less. For example, if a dinosaur has a `mya` value of `[29]`, the dinosaur's information will be returned if `29` is entered or `28` is entered.
+function isAlive(obj, mya) {
+    if (obj.mya.length === 1) {
+        return obj.mya[0] === mya || obj.mya[0] - 1 === mya; 
+    } else {
+        return mya >= obj.mya[1] && mya <= obj.mya[0]
+    }
+}
+
+
+console.log(isAlive(dinos[4], 65));
   // ------------------------------------------------------
-  // 3. Given an array of dinosaurs and a key return a new array where each dinosaur object is replaced with the corresponding value of a specified key within each object. If no key is given or a wrong key is given, return the dinosaurIds
+  // 3. Given an array of dinosaurs and a key, return a new array where each dinosaur object is replaced with the corresponding value of a specified key within each object. If no key is given or a wrong key is given, return the dinosaurIds
+  
+  function replaceObjWithKey(arr, key) {
+    const arrOfKeys = [];
+    for (let dino of arr) {
+       if (dino[key]) {
+        arrOfKeys.push(dino[key]);
+       } else {
+         arrOfKeys.push(dino.dinosaurId);
+       }
+    }
+    return arrOfKeys;
+  }
+
+  console.log(replaceObjWithKey(dinos, "name"));
+  console.log(replaceObjWithKey(dinos, "period"));
+  console.log(replaceObjWithKey(dinos));
