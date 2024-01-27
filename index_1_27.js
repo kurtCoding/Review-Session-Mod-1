@@ -23,9 +23,27 @@ console.log(countOccurrences(arr1));
 // ------------------------------------------------------------------------
 
 // 2. Write a function that takes an object and a property name (key), and returns the value of the property. If the property doesn't exist in the object return an error message
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 25,
+    occupation: "Engineer"
+  };
+  
+  const car = {
+    make: "Toyota",
+    model: "Camry",
+    year: 2022,
+    color: "Silver"
+  };
 
 // YOUR CODE HERE
-function 
+function findPropertyValue(obj, key) {
+    return (obj[key]) ? obj[key] : `${key} doesn't exist!`;
+}
+
+console.log(findPropertyValue(car, "make"));
+console.log(findPropertyValue(person, "occupation"));
 
 // ------------------------------------------------------------------------
 
