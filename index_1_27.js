@@ -132,7 +132,8 @@ const companyOrganizationalStructure = {
   };
   
   // YOUR CODE HERE
-  
+  const secondEngineerDesk = companyOrganizationalStructure.departments.development.head.office.employees.softwareEngineer2.desk;
+  console.log(secondEngineerDesk);
   // ------------------------------------------------------------------------
   
   // 5. Given the following variables, create a new object. the key variable should be the key and the value variable should be it's corresponding value. You have to use the variables!
