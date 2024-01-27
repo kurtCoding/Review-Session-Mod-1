@@ -23,7 +23,7 @@ console.log(countOccurrences(arr1));
 // ------------------------------------------------------------------------
 
 // 2. Write a function that takes an object and a property name (key), and returns the value of the property. If the property doesn't exist in the object return an error message
-const person = {
+const person1 = {
     firstName: "John",
     lastName: "Doe",
     age: 25,
@@ -43,13 +43,13 @@ function findPropertyValue(obj, key) {
 }
 
 console.log(findPropertyValue(car, "make"));
-console.log(findPropertyValue(person, "occupation"));
+console.log(findPropertyValue(person1, "occupation"));
 
 // ------------------------------------------------------------------------
 
 // 3. Given a person object, update their street to the new given street. The person object will have these properties -
 
-/*
+
 
 const person = {
   firstName: "John",
@@ -62,10 +62,12 @@ const person = {
   }
 };
 
-*/
 
 // YOUR CODE HERE
-
+function updateStreet(obj, key, input) {
+    return obj[key] = input;
+}
+console.log(updateStreet(person, "street", "Brooklyn"));
 // ------------------------------------------------------------------------
 
 // 4. Given the following object, preform the following tasks -
