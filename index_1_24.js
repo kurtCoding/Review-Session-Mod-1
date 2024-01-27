@@ -219,13 +219,6 @@ const dinos = [
   
   // ------------------------------------------------------
 //   // 2. Given a dinosaur object and an mya (Millions of years ago) value, return a boolean indicating whether it was alive during that time or not
-//   function isAlive(obj, mya) {
-//     if (mya === obj.mya[1] || mya === obj.mya[0]) {
-//         return true;
-//     } else 
-//     return false;
-//   }
-
 
 // If the dinosaur only has a single value for `mya`, they're considered alive if the `mya` value is equal to the given value or one less. For example, if a dinosaur has a `mya` value of `[29]`, the dinosaur's information will be returned if `29` is entered or `28` is entered.
 function isAlive(obj, mya) {
