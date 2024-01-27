@@ -139,7 +139,7 @@ const companyOrganizationalStructure = {
   const newKey = companyOrganizationalStructure.departments.development.head.office.employees.softwareEngineer3;
   companyOrganizationalStructure.departments.marketing.head = "Johann Marketer";
   const newHeadMarketing = companyOrganizationalStructure.departments.marketing.head; 
-  
+
   console.log(secondEngineerDesk);
   console.log(marketingLocation);
   console.log(exeAssistant);
@@ -151,7 +151,13 @@ const companyOrganizationalStructure = {
   
   const key = "name";
   const value = "Roberto Robertson"
+
+      newObj = {
+        [key]: value
+    }
   
+  
+  console.log(newObj);
   // 6. Write a function that takes an object as it's only parameter and logs each property to the console. The function ONLY LOGS
   
   // YOUR CODE HERE
