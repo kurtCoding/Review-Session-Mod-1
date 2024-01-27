@@ -1,9 +1,23 @@
  // 1. Write a function that takes in an array and returns an object where each element in the array is a key, and the values are the number of times each element appears in the array -
 
 // YOUR CODE HERE
+function countOccurrences(arr) {
+    const objOfKeys = {};
+    // let eleCount = 0;
 
+    for (let ele of arr) {
+       if (!objOfKeys[ele]) {
+            objOfKeys[ele] = 1;
+        } else {
+            objOfKeys[ele]++;
+        }
+    }
+    return objOfKeys;
+}
+
+const arr1 = ["apple", "orange", "apple", "banana", "apple", "orange"];
+console.log(countOccurrences(arr1));
 // Example:
-// ["apple", "orange", "apple", "banana", "apple", "orange"]
 // { apple: 3, orange: 2, banana: 1}
 
 // ------------------------------------------------------------------------
@@ -11,6 +25,7 @@
 // 2. Write a function that takes an object and a property name (key), and returns the value of the property. If the property doesn't exist in the object return an error message
 
 // YOUR CODE HERE
+function 
 
 // ------------------------------------------------------------------------
 
