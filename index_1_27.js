@@ -133,7 +133,18 @@ const companyOrganizationalStructure = {
   
   // YOUR CODE HERE
   const secondEngineerDesk = companyOrganizationalStructure.departments.development.head.office.employees.softwareEngineer2.desk;
+  const marketingLocation = companyOrganizationalStructure.departments.marketing.head.office.location;
+  const exeAssistant = companyOrganizationalStructure.CEO.office.employees.executiveAssistant.name;
+   companyOrganizationalStructure.departments.development.head.office.employees.softwareEngineer3 = {name: "Kurt"};
+  const newKey = companyOrganizationalStructure.departments.development.head.office.employees.softwareEngineer3;
+  companyOrganizationalStructure.departments.marketing.head = "Johann Marketer";
+  const newHeadMarketing = companyOrganizationalStructure.departments.marketing.head; 
+  
   console.log(secondEngineerDesk);
+  console.log(marketingLocation);
+  console.log(exeAssistant);
+  console.log(newKey);
+  console.log(newHeadMarketing);
   // ------------------------------------------------------------------------
   
   // 5. Given the following variables, create a new object. the key variable should be the key and the value variable should be it's corresponding value. You have to use the variables!
