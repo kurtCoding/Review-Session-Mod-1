@@ -44,17 +44,15 @@ console.log(findLongestWords(fruits));
 
 // 3. Write a function that takes an array of strings, and returns a new array of the lengths of strings longer than 5 characters
 function arrOfLongWords(arr) {
-    let newArrOfLongWord = [];
+    // let newArrOfLongWord = [];
     // for (let str of arr) {
     //     if (str.length > 5) {
     //         newArrOfLongWord.push(str.length);
     //     }
     // }
     // return newArrOfLongWord;
-  const longWord = arr.map((str) => (str.length > 5))
-    newArrOfLongWord.push(longWord.length)
-    return newArrOfLongWord;
-}
+  return arr.filter(str => str.length > 5).map((str) => (str.length))
+ }
 
 console.log(arrOfLongWords(programmingLanguages));
 console.log(arrOfLongWords(colors));
