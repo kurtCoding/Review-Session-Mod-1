@@ -22,14 +22,16 @@ const arr1 = ["hello", "world"];
 console.log(findStrLength(arr1));
 // 2. Write a function that takes an array of strings and returns an array of strings longer than 5 characters (spaces count)
 function findLongestWords(arr) {
-    let arrOfStrings = [];
+    // let arrOfStrings = [];
 
-    for (let str of arr) {
-        if (str.length > 5) {
-            arrOfStrings.push(str);
-        }
-    }
-    return arrOfStrings;
+    // for (let str of arr) {
+    //     if (str.length > 5) {
+    //         arrOfStrings.push(str);
+    //     }
+    // }
+    // return arrOfStrings;
+    return arr.filter(str => str.length > 5);
+
 }
 
 const programmingLanguages = ["JavaScript", "Python", "C++", "Java", "Ruby on Rails"];
