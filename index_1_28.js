@@ -58,7 +58,29 @@ console.log(arrOfLongWords(programmingLanguages));
 console.log(arrOfLongWords(colors));
 console.log(arrOfLongWords(fruits));
 
-// 4. Write a function that takes an array of numbers and returns the sum of all even numebrs
+// 4. Write a function that takes an array of numbers and returns the sum of all even numbers
+function sumOfEvenNumbers(arr) {
+    // let sum = 0;
+    // for (let num of arr) {
+    //     if (num % 2 === 0) {
+    //         sum += num;
+    //     }
+    // }
+    // return sum;
+    return arr.reduce((sum, num) => (num % 2 === 0) ? sum + num : sum, 0)
+
+}
+
+const mixedArray0 = [1, 3, 2, 5, 6, 10, 7];
+const mixedArray1 = [5, 20, 3, 15, 100, 11];
+const mixedArray2 = [2, 50, 8, 75, 10, 23, 6];
+const mixedArray3 = [1, 30, 6, 40, 200, 111, 113];
+
+console.log(sumOfEvenNumbers(mixedArray1));
+console.log(sumOfEvenNumbers(mixedArray2));
+console.log(sumOfEvenNumbers(mixedArray3));
+console.log(sumOfEvenNumbers(mixedArray0));
+
 
 // 5. Write a function that takes an array of numbers and returns the min num
 
