@@ -21,6 +21,24 @@ function findStrLength(arr) {
 const arr1 = ["hello", "world"];
 console.log(findStrLength(arr1));
 // 2. Write a function that takes an array of strings and returns an array of strings longer than 5 characters (spaces count)
+function findLongestWords(arr) {
+    let arrOfStrings = [];
+
+    for (let str of arr) {
+        if (str.length > 5) {
+            arrOfStrings.push(str);
+        }
+    }
+    return arrOfStrings;
+}
+
+const programmingLanguages = ["JavaScript", "Python", "C++", "Java", "Ruby on Rails"];
+const colors = ["Red", "Blue", "Green", "Yellow", "Purple"];
+const fruits = ["Apple", "Banana", "Orange", "Grapes", "Watermelon"];
+
+console.log(findLongestWords(programmingLanguages));
+console.log(findLongestWords(colors));
+console.log(findLongestWords(fruits));
 
 // 3. Write a function that takes an array of strings, and returns a new array of the lengths of strings longer than 5 characters
 
