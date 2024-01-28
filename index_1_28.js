@@ -11,11 +11,11 @@
 // ["hello", "world"] => [5, 5] 
 function findStrLength(arr) {
     let strLength = [];
-
-    for (let str of arr) {
-        strLength.push(str.length); 
-    }
-    return strLength;
+    // for (let str of arr) {
+    //     strLength.push(str.length); 
+    // }
+    // return strLength;
+    return strLength = arr.map((str) => str.length);
 }
 
 const arr1 = ["hello", "world"];
