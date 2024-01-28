@@ -9,7 +9,17 @@
 
 // 1. Write a function that takes in an array of strings and returns a new array where each string is replaced by it's length
 // ["hello", "world"] => [5, 5] 
+function findStrLength(arr) {
+    let strLength = [];
 
+    for (let str of arr) {
+        strLength.push(str.length); 
+    }
+    return strLength;
+}
+
+const arr1 = ["hello", "world"];
+console.log(findStrLength(arr1));
 // 2. Write a function that takes an array of strings and returns an array of strings longer than 5 characters (spaces count)
 
 // 3. Write a function that takes an array of strings, and returns a new array of the lengths of strings longer than 5 characters
