@@ -159,13 +159,25 @@ const companyOrganizationalStructure = {
   
   console.log(newObj);
   // 6. Write a function that takes an object as it's only parameter and logs each property to the console. The function ONLY LOGS
+
+  let persona = {
+    name: "kurt",
+    age: 33,
+    hair: "long"
+  }
   
   // YOUR CODE HERE
-  
+  function logObjVals(obj) {
+    console.log(obj, "line 171")
+  }
+
+  console.log(logObjVals(persona));
   // ------------------------------------------------------------------------
   
   // 7. Write a function that takes two objects and checks if they have the same values. HINT: use the (for.. in..) loop
   
   // YOUR CODE HERE
-  
+  function checkObjValue(obj1, obj2) {
+    
+  }
   // ------------------------------------------------------------------------
