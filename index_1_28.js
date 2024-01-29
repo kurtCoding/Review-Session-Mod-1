@@ -83,5 +83,28 @@ console.log(sumOfEvenNumbers(mixedArray0));
 
 
 // 5. Write a function that takes an array of numbers and returns the min num
+function findMinNum(arr) {
+    // let minNum = Infinity;
+    // for (let num of arr) {
+    //     if (num < minNum) {
+    //         minNum = num;
+    //     }
+    // }
+    // return minNum;
+    return Math.min(...arr);
+}
+
+console.log(findMinNum(mixedArray2));
 
 // 6. Write a function that takes in a string and returns the character that appears the most times (only letters count)
+function getCharCount(str) {
+    let charCount = 0;
+
+    for (let char of str) {
+        (!charCount[char]) ? charCount = 1 : charCount++
+    }
+    return charCount;
+}
+
+console.log(getCharCount("Banana"))
+console.log(getCharCount("Watermelon"))
