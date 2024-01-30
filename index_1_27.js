@@ -178,6 +178,6 @@ const companyOrganizationalStructure = {
   
   // YOUR CODE HERE
   function checkObjValue(obj1, obj2) {
-    
+      
   }
   // ------------------------------------------------------------------------

@@ -98,12 +98,17 @@ console.log(findMinNum(mixedArray2));
 
 // 6. Write a function that takes in a string and returns the character that appears the most times (only letters count)
 function getCharCount(str) {
-    let charCount = 0;
+    // let charCount = {};
+    let maxChar = str[0];
 
     for (let char of str) {
-        (!charCount[char]) ? charCount = 1 : charCount++
+        (!charCount[char]) ? charCount[char] = 1 : charCount[char]++
+        if (charCount[char] > charCount[maxChar]) {
+            maxChar = char;  
+        }
     }
-    return charCount;
+    return maxChar;
+    // return str.spilt("").reduce((charCount, curr) => , {})
 }
 
 console.log(getCharCount("Banana"))
